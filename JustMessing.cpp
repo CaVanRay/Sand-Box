@@ -13,7 +13,7 @@ int main() {
     cout << endl << "ok, lets have some fun" << endl;
     for(int i = 1; i <= number1; i++){
         for(int j = 1; j <= number1; j++){
-            cout << " " << i*j << " ";
+            cout << "    " << i*j << "    ";
         }
         cout << endl;
     }
