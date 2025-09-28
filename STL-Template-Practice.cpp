@@ -1,5 +1,6 @@
 #include <iostream>
 
+using namespace std;
 
 template <typename T>
 class Calculator {
@@ -19,13 +20,17 @@ class Calculator {
 }
 
  T divide(T a, T b) {
+    if (b == 0) {
+        cout << "Error: Division by zero!" << endl;
+        return NULL;
+    }
     return a / b;
 }
  
  
 };
 
-using namespace std;
+
 
 int main() {
     
@@ -36,6 +41,8 @@ int main() {
     cout << intCalculator.multiply(5, 8) << endl;
     cout << intCalculator.divide(5, 8) << endl << endl;
     
+    cout << intCalculator.divide(1, 0) <<endl << endl;
+    
     Calculator<float> floatCalculator;
     
     cout << floatCalculator.add(5.2, 7.84) << endl;
@@ -43,4 +50,8 @@ int main() {
     cout << floatCalculator.multiply(5.2, 7.84) << endl;
     cout << floatCalculator.divide(5.2, 7.84) << endl;
     
+    
 }
+
+
+ 
