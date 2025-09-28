@@ -11,8 +11,8 @@ int main() {
     cin >> number1;
 
     cout << endl << "ok, lets have some fun" << endl;
-    for(int i = 0; i < number1; i++){
-        for(int j = 0; j < number1; j++){
+    for(int i = 1; i <= number1; i++){
+        for(int j = 1; j <= number1; j++){
             cout << " " << i*j << " ";
         }
         cout << endl;
