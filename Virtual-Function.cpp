@@ -5,16 +5,22 @@ class Instrument {
 
 public:
   void MakeSound(){
-    cout << "Instrument playing...\n";
-    
+    cout << "Instrument playing...\n";    
   }
-
 };
+
+class Accordion:public Instrument {
+  void MakeSound(){
+    cout << "Accordion playing...\n";    
+  }
+}:
 
 int main() 
 {
-  Instrument i1;
-  i1.MakeSound();
+  Instrument* i1 = new Accordion();
+  i1->MakeSound();
 
-  system ("pause>0");
+  
+
+  return 0;
 }
