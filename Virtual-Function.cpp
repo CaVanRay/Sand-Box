@@ -13,7 +13,7 @@ class Accordion:public Instrument {
   void MakeSound(){
     cout << "Accordion playing...\n";    
   }
-}:
+};
 
 int main() 
 {
