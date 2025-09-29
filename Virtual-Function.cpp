@@ -4,7 +4,7 @@ using namespace std;
 class Instrument {
 
 public:
-  void MakeSound(){
+  virtual void MakeSound(){
     cout << "Instrument playing...\n";    
   }
 };
