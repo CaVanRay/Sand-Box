@@ -8,6 +8,15 @@ struct Node {
     Node* next;    // pointer to the next node
 };
 
+void printList(Node* n) {
+    while (n != nullptr) {
+        cout << n->data << " ";
+        n = n->next;
+    }
+    cout << endl;
+}
+
+
 int main() {
     // Create nodes
     Node* head = new Node();   // first node
@@ -24,5 +33,7 @@ int main() {
     third->data = 30;
     third->next = nullptr; // end of list
 
+    printList(head);
+    
     return 0;
 }
