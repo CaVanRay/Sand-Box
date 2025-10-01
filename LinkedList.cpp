@@ -9,8 +9,6 @@ struct Node {
 };
 
 int main() {
-
-int main() {
     // Create nodes
     Node* head = new Node();   // first node
     Node* second = new Node(); // second node
@@ -27,9 +25,4 @@ int main() {
     third->next = nullptr; // end of list
 
     return 0;
-}
-
-
-
-  return 0;
 }
