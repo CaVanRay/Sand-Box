@@ -16,15 +16,17 @@ int main() {
 
   switch(weapon){
    case 1:
-            std::cout << "Paper" << std::endl;
-            break;
-        case 2:
-            std::cout << "Rock" << std::endl;
-            break;
-        case 3:
-            std::cout << "Scissors" << std::endl;
-            break;
-  
+        cout << "Paper" << endl;
+        break;
+            
+    case 2:
+        cout << "Rock" << endl;
+        break;
+        
+    case 3:
+        cout << "Scissors" << endl;
+        break;
+  }
 
   return 0;
 }
