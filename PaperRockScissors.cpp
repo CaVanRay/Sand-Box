@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib>
+#include <time>
 
 using namespace std;
 
@@ -9,7 +11,8 @@ int main() {
   char answ;
   cin >> answ;
   cout << "Pick a weapon and then click enter" << \n;
-  cin >> ;
+  cin.get();
+  
   
 
   return 0;
