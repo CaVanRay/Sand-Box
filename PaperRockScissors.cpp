@@ -12,7 +12,8 @@ int main() {
   cin >> answ;
   while(toupper(answ) == 'Y'){
     cout << "Pick a weapon and then click enter" << "\n";
-    cin >>;
+    cin.ignore();
+    cin.get();
     int weapon = ((rand() % 3) + 1);
 
     switch(weapon){
