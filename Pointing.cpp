@@ -28,6 +28,10 @@ int main() {
   cout << "Pnum2 = num2 = " << Pnum2 << " = " << *Pnum2 << endl;
   cout << "Pletter = letter = " << Pletter << " = " << *Pletter << endl;
   cout << "Pletters = letters = " << Pletters << " = " << *Pletters << endl;
+
+  // dude, wtf, I did not expect this to work
+  char* Pnum3 = "0x7ffce40339b4";
+  cout << endl << "Pnum3 = " << Pnum3 << " = " << *Pnum3 << endl;
   
   return 0;
 }
