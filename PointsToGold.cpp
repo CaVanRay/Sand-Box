@@ -7,8 +7,7 @@ int main(){
   // I need to practice with pointers
 
   int PotOGold;
-  int* EndOfRainbow;
-  EndOfRainbow = &PotOGold;
+  int* EndOfRainbow = &PotOGold;
 
   PotOGold = 999;
   
