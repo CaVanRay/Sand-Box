@@ -3,7 +3,8 @@
 using namespace std;
 
 struct ListItem{
-
+    int data;
+    Item* next;
 }
 
 int main() {
