@@ -14,7 +14,15 @@ int main() {
   char* Pletter = &letter;
   string* Pletters = &letters;
 
-  
+  cout << endl << "Give me a number: ";
+  cin >> num1;
+  cout << endl << "Give me a bigger number: ";
+  cin >> num2;
+  cout << endl << "Give me a letter: ";
+  cin >> letter;
+  cout << endl << "Give me a word: ";
+  cin >> letters;
 
+  
   return 0;
 }
