@@ -2,10 +2,20 @@
 
 using namespace std;
 
-struct node{
+struct Node{
 int data;
-node* next;
+Node* next;
+
+Node(int val) : data(val), next(nullptr) {}
 };
+
+void addAtHead(Node* &head, int val){
+  Node* newNode = new Node(val);
+  newNode->next = head;
+  head = newNode;
+}
+
+
 
 int main() {
 
@@ -34,9 +44,7 @@ int main() {
   cout << "Pletter = letter = " << Pletter << " = " << *Pletter << endl;
   cout << "Pletters = letters = " << Pletters << " = " << *Pletters << endl;
 
-  // dude, wtf, I did not expect this to work
-  // char* Pnum3 = "0x7ffce40339b4";
-  // cout << endl << "Pnum3 = " << Pnum3 << " = " << *Pnum3 << endl;
+  Node* head = nullptr;
   
   return 0;
 }
