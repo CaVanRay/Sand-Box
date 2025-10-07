@@ -22,7 +22,12 @@ int main() {
   cin >> letter;
   cout << endl << "Give me a word: ";
   cin >> letters;
-
+  
+  cout << endl << "OK using only the pointers I made: " << endl;
+  cout << "Pnum1 = num1 = " << *Pnum1 << endl;
+  cout << "Pnum2 = num2 = " << *Pnum2 << endl;
+  cout << "Pletter = letter = " << *Pletter << endl;
+  cout << "Pletters = letters = " << *Pletters << endl;
   
   return 0;
 }
