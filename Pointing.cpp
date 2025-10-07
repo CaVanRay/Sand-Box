@@ -15,7 +15,18 @@ void addAtHead(Node* &head, int val){
   head = newNode;
 }
 
-void addAtTail(Node* &head, int val) {}
+void addAtTail(Node* &head, int val) {
+  Node* newNode = new Node(val);
+  if (head == nullptr){
+    head = newNode;
+    return;
+  }
+  Node* current = head;
+  while(current->next != nullptr) {
+    current = current->next;
+  }
+  current->next = newNode;
+}
 
 int main() {
 
