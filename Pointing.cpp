@@ -15,7 +15,7 @@ void addAtHead(Node* &head, int val){
   head = newNode;
 }
 
-
+void addAtTail(Node* &head, int val) {}
 
 int main() {
 
