@@ -18,6 +18,10 @@ int main() {
     cin >> items;
     
     for(int i = 0; i < items; i++){
+
+        int Bucket;
+        cout << "What number do you want to store in item " << i+1 << "? :"; 
+        cin >> Bucket;
       
     }
 
