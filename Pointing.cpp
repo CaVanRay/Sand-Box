@@ -24,10 +24,10 @@ int main() {
   cin >> letters;
   
   cout << endl << "OK using only the pointers I made: " << endl;
-  cout << "Pnum1 = num1 = " << *Pnum1 << endl;
-  cout << "Pnum2 = num2 = " << *Pnum2 << endl;
-  cout << "Pletter = letter = " << *Pletter << endl;
-  cout << "Pletters = letters = " << *Pletters << endl;
+  cout << "Pnum1 = num1 = " << Pnum1 << " = " << *Pnum1 << endl;
+  cout << "Pnum2 = num2 = " << Pnum2 << " = " << *Pnum2 << endl;
+  cout << "Pletter = letter = " << Pletter << " = " << *Pletter << endl;
+  cout << "Pletters = letters = " << Pletters << " = " << *Pletters << endl;
   
   return 0;
 }
