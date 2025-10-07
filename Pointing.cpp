@@ -35,8 +35,8 @@ int main() {
   cout << "Pletters = letters = " << Pletters << " = " << *Pletters << endl;
 
   // dude, wtf, I did not expect this to work
-  char* Pnum3 = "0x7ffce40339b4";
-  cout << endl << "Pnum3 = " << Pnum3 << " = " << *Pnum3 << endl;
+  // char* Pnum3 = "0x7ffce40339b4";
+  // cout << endl << "Pnum3 = " << Pnum3 << " = " << *Pnum3 << endl;
   
   return 0;
 }
