@@ -12,7 +12,7 @@ int main(){
 
   PotOGold = 999;
   
-  cout << "At the end of the rainbow theres a pot of " << EndOfRainbow << " peices of gold!" << endl;
+  cout << "At the end of the rainbow theres a pot of " << *EndOfRainbow << " peices of gold!" << endl;
   
   return 0;
 }
