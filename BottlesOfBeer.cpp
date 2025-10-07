@@ -13,13 +13,13 @@ int main(){
         cin >> numOfBottles;
 
         for(int i = numOfBottles; i > 0; i--){
-            cout << numOfBottles << " bottles of beer on the wall!" << endl;
-            cout << numOfBottles << " bottles of beer!" << endl;
-            cout << "We take one down, pass it around!" << endl;
+            cout << i << " bottles of beer on the wall!" << endl << endl;
+            cout << i << " bottles of beer!" << endl << endl;
+            cout << "We take one down, pass it around!" << endl << endl;
             if(i == 1){
-                cout << "There are no more bottles of beer on the wall!" << endl;
+                cout << "There are no more bottles of beer on the wall!" << endl << endl;
             }else{
-                cout << numOfBottles-1 << " of beer on the wall!" << endl; 
+                cout << i-1 << " of beer on the wall!" << endl << endl << endl << endl; 
             }
         }
         
