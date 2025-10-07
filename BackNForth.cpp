@@ -1,5 +1,7 @@
 #include <iostream>
 
+// this is really stupid, but i'm tired
+
 using namespace std;
 
 struct ListItem{
