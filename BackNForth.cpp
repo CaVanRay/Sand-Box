@@ -4,8 +4,8 @@ using namespace std;
 
 struct ListItem{
     int data;
-    Item* next;
-}
+   // Item* next;
+};
 
 int main() {
 
