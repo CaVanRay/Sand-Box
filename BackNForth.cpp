@@ -4,16 +4,16 @@ using namespace std;
 
 int main() {
 
-  char cont = Y;
+  char cont = 'Y';
 
-  while(toupper(cont) == Y) {
+  while(toupper(cont) == 'Y') {
 
     int items;
     cout << "How many items would you like to store? : " ;
     cin >> items;
 
 
-    cout << "Would you like to continue? Y/N" << endl << endl;
+    cout << "Would you like to continue? Y/N" ;
     cin >> cont;
   }
 
