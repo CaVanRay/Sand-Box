@@ -6,7 +6,7 @@ using namespace std;
 
 struct ListItem{
     int data;
-   // Item* next;
+    ListItem* next;
 };
 
 int main() {
