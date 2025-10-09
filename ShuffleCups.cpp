@@ -1,16 +1,20 @@
 #include<iostream>
+#include <cstdlib> 
+#include <ctime> 
 
 using namespace std;
 
 int main(){
-
-  int cup1 = 1, cup2 = 2, cup3 = 3;
+    
+  srand(time(0));
+  int cup[1] = 1, cup[2] = 2, cup[3] = 3;
   int* ball = &cup2;
   char answer = 'Y';
   
   while(toupper(answer) == 'Y'){
     
-    
+    int randomNumber = (rand() % 3) + 1;
+    ball = &cup[randomNumber];
     cout << endl << endl << "The Ball is located in cup " << *ball ;
     
     cout << endl << endl << "Would you like to continue? (Y/N): " ;
