@@ -9,8 +9,10 @@ int main(){
   char answer = 'Y';
   
   while(toupper(answer) == 'Y'){
-
-
+    
+    
+    cout << endl << endl << "The Ball is located in cup " << *ball ;
+    
     cout << endl << endl << "Would you like to continue? (Y/N): " ;
     cin >> answer;
   }
