@@ -1,8 +1,6 @@
 #include<iostream>
 #include<cstdlib> 
 #include<ctime> 
-#include<vector>
-#include<array>
 
 using namespace std;
 
