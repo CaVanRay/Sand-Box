@@ -9,14 +9,14 @@ using namespace std;
 int main(){
     
 srand(time(0));
-
+char answer = 'Y';
 while(toupper(answer) == 'Y'){
 
     cout << endl*3;
 
     int cup[3] = {1, 2, 3};  
     int* ball = &cup[2];
-    char answer = 'Y';
+    
   
     
     int randomNumber = (rand() % 3);
