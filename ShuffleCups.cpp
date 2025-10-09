@@ -9,7 +9,7 @@ using namespace std;
 int main(){
     
   srand(time(0));
-  int cup[2] = {1, 2, 3};
+  int cup[3] = {1, 2, 3};
   
   int* ball = &cup[2];
   char answer = 'Y';
