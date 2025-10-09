@@ -17,9 +17,11 @@ int main(){
             cout << i << " bottles of beer!" << endl << endl;
             cout << "We take one down, pass it around!" << endl << endl;
             if(i == 1){
-                cout << "There are no more bottles of beer on the wall!" << endl << endl;
+                cout << "No more bottles of beer on the wall!" << endl << endl;
+            }else if(i == 2){
+                cout << "Only one bottle of beer on the wall!" << endl << endl << endl << endl; 
             }else{
-                cout << i-1 << "bottles of beer on the wall!" << endl << endl << endl << endl; 
+                cout << i-1 << " bottles of beer on the wall!" << endl << endl << endl << endl;
             }
         }
         
