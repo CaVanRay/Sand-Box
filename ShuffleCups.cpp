@@ -1,14 +1,17 @@
 #include<iostream>
-#include <cstdlib> 
-#include <ctime> 
+#include<cstdlib> 
+#include<ctime> 
+#include<vector>
+#include<array>
 
 using namespace std;
 
 int main(){
     
   srand(time(0));
-  int cup[1] = 1, cup[2] = 2, cup[3] = 3;
-  int* ball = &cup2;
+  int cup[2] = [ 1, 2, 3];
+  
+  int* ball = &cup[2];
   char answer = 'Y';
   
   while(toupper(answer) == 'Y'){
