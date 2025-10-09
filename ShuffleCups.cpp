@@ -16,7 +16,7 @@ int main(){
   
   while(toupper(answer) == 'Y'){
     
-    int randomNumber = (rand() % 3) + 1;
+    int randomNumber = (rand() % 3);
     ball = &cup[randomNumber];
     cout << endl << endl << "The Ball is located in cup " << *ball ;
     
