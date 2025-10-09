@@ -19,7 +19,7 @@ int main(){
             if(i == 1){
                 cout << "There are no more bottles of beer on the wall!" << endl << endl;
             }else{
-                cout << i-1 << " of beer on the wall!" << endl << endl << endl << endl; 
+                cout << i-1 << "bottles of beer on the wall!" << endl << endl << endl << endl; 
             }
         }
         
