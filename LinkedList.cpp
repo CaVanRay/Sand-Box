@@ -11,6 +11,7 @@ class Node {
         int getData() const { return data; }
         Node* getNext() const { return next; }
         void setNext(Node* newNext) { next = newNext; }
+        void setData(int newData) {data = newData;}
 };
 
 void printFrontToBack(Node* n) {
@@ -42,7 +43,6 @@ int main() {
 
     printFrontToBack(head);
     printBackToFront(head, second, third);
-    printFrontToBack(third);
     
     cout << endl << "Now which item do you want to change? head | second | third :" ;
     string changeItem;
@@ -50,7 +50,19 @@ int main() {
     cout << endl << "Now input new number for item " << changeItem << " :";
     int amount;
     cin >> amount;
-    
+
+    if(changeItem == "head"){
+        head->setData(amount);
+    }else if(changeItem == "second"){
+        second->setData(amount);
+    }else if(changeItem == "third"){
+        third->setData(amount);
+    }else{
+        cout << endl << "Sorry, I couldn't find item " << changeItem << " but " << amount << " is my favorite number! ";
+    }
+
+    printFrontToBack(head);
+    printBackToFront(head, second, third);
     
     return 0;
 }
@@ -62,5 +74,13 @@ void printBackToFront(Node* head, Node* second, Node* third) {
     second->setNext(head);
 
     third->setNext(second);
+    
+    printFrontToBack(third);
+    
+    third->setNext(nullptr);
+    
+    second->setNext(third);
+    
+    head->setNext(second);
     
 }
