@@ -7,8 +7,10 @@ class Node {
     Node* next;    // pointer to the next node
     
     public:
-    
-    
+        Node(int val) : data(val), next(nullptr) {}
+        int getData() const { return data; }
+        Node* getNext() const { return next; }
+        void setNext(Node* newNext) { next = newNext; }
 };
 
 void printList(Node* n) {
