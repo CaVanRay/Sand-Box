@@ -41,7 +41,7 @@ int main() {
     third->setNext(nullptr); // end of list
 
     printFrontToBack(head);
-    printBackToFront();
+    printBackToFront(head, second, third);
     printFrontToBack(third);
     
     
@@ -49,16 +49,12 @@ int main() {
     return 0;
 }
 
-void printBackToFront(Node*, Node*, Node*) {
+void printBackToFront(Node* head, Node* second, Node* third) {
 
-    Node* A;
-    Node* B;
-    Node* C;
-        
-    A->setNext(nullptr);
+    head->setNext(nullptr);
 
-    B->setNext(head);
+    second->setNext(head);
 
-    C->setNext(second);
+    third->setNext(second);
     
 }
