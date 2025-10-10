@@ -43,6 +43,14 @@ int main() {
     third->setNext(nullptr); // end of list
 
     printFrontToBack(head);
+
+    head->setNext(nullptr);
+
+    second->setNext(head);
+
+    third->setNext(second):
+
+    printFrontToBack(third);
     
     
     
