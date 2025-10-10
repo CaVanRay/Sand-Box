@@ -21,15 +21,7 @@ void printFrontToBack(Node* n) {
     cout << endl;
 }
 
-void printBackToFront() {
-
-    head->setNext(nullptr);
-
-    second->setNext(head);
-
-    third->setNext(second);
-    
-}
+void printBackToFront();
 
 
 int main() {
@@ -49,12 +41,24 @@ int main() {
     third->setNext(nullptr); // end of list
 
     printFrontToBack(head);
-
-
-
+    printBackToFront();
     printFrontToBack(third);
     
     
     
     return 0;
+}
+
+void printBackToFront(Node*, Node*, Node*) {
+
+    Node* A;
+    Node* B;
+    Node* C;
+        
+    A->setNext(nullptr);
+
+    B->setNext(head);
+
+    C->setNext(second);
+    
 }
