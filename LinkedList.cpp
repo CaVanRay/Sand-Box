@@ -21,7 +21,7 @@ void printFrontToBack(Node* n) {
     cout << endl;
 }
 
-void printBackToFront();
+void printBackToFront(Node*, Node*, Node*);
 
 
 int main() {
@@ -49,7 +49,7 @@ int main() {
     return 0;
 }
 
-void printBackToFront(Node* head, Node* second, Node* third) {
+void printBackToFront( head, second, third) {
 
     head->setNext(nullptr);
 
