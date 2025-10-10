@@ -21,7 +21,7 @@ void printFrontToBack(Node* n) {
     cout << endl;
 }
 
-void printBackToFront(Node* n) {
+void printBackToFront() {
     
 }
 
