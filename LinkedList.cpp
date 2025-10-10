@@ -15,8 +15,8 @@ class Node {
 
 void printList(Node* n) {
     while (n != nullptr) {
-        cout << n->data << " ";
-        n = n->next;
+        cout << n->getData() << " ";
+        n = n->setNext();
     }
     cout << endl;
 }
@@ -24,19 +24,19 @@ void printList(Node* n) {
 
 int main() {
     // Create nodes
-    Node* head = new Node();   // first node
-    Node* second = new Node(); // second node
-    Node* third = new Node();  // third node
+    Node* head = new Node(10);   // first node
+    Node* second = new Node(20); // second node
+    Node* third = new Node(30);  // third node
 
     // Assign values
-    head->data = 10;
-    head->next = second;
+    //head->data = 10;
+    head->setNext() = second;
 
-    second->data = 20;
-    second->next = third;
+    //second->data = 20;
+    second->setNext() = third;
 
-    third->data = 30;
-    third->next = nullptr; // end of list
+    //third->data = 30;
+    third->setNext() = nullptr; // end of list
 
     printList(head);
     
