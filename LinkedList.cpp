@@ -46,6 +46,11 @@ int main() {
     
     cout << endl << "Now which item do you want to change? head | second | third :" ;
     string changeItem;
+    cin >> changeItem;
+    cout << endl << "Now input new number for item " << changeItem << " :";
+    int amount;
+    cin >> amount;
+    
     
     return 0;
 }
