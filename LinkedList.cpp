@@ -22,6 +22,12 @@ void printFrontToBack(Node* n) {
 }
 
 void printBackToFront() {
+
+    head->setNext(nullptr);
+
+    second->setNext(head);
+
+    third->setNext(second);
     
 }
 
@@ -44,11 +50,7 @@ int main() {
 
     printFrontToBack(head);
 
-    head->setNext(nullptr);
 
-    second->setNext(head);
-
-    third->setNext(second):
 
     printFrontToBack(third);
     
