@@ -49,7 +49,7 @@ int main() {
     return 0;
 }
 
-void printBackToFront( head, second, third) {
+void printBackToFront(Node* head, Node* second, Node* third) {
 
     head->setNext(nullptr);
 
