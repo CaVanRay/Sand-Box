@@ -1,9 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-struct Node {
+class Node {
+    private:
     int data;      // the value
     Node* next;    // pointer to the next node
+    
+    public:
+    
+    
 };
 
 void printList(Node* n) {
