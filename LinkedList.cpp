@@ -13,12 +13,16 @@ class Node {
         void setNext(Node* newNext) { next = newNext; }
 };
 
-void printList(Node* n) {
+void printFrontToBack(Node* n) {
     while (n != nullptr) {
         cout << n->getData() << " ";
-        n = n->setNext();
+        n = n->getNext();
     }
     cout << endl;
+}
+
+void printBackToFront(Node* n) {
+    
 }
 
 
@@ -30,15 +34,17 @@ int main() {
 
     // Assign values
     //head->data = 10;
-    head->setNext() = second;
+    head->setNext(second);
 
     //second->data = 20;
-    second->setNext() = third;
+    second->setNext(third);
 
     //third->data = 30;
-    third->setNext() = nullptr; // end of list
+    third->setNext(nullptr); // end of list
 
-    printList(head);
+    printFrontToBack(head);
+    
+    
     
     return 0;
 }
