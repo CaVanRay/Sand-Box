@@ -44,7 +44,7 @@ int main() {
     printBackToFront(head, second, third);
     printFrontToBack(third);
     
-    cout >> endl >> "Now which item do you want to change? head | second | third :" ;
+    cout << endl << "Now which item do you want to change? head | second | third :" ;
     string changeItem;
     
     return 0;
@@ -59,5 +59,3 @@ void printBackToFront(Node* head, Node* second, Node* third) {
     third->setNext(second);
     
 }
-
-
