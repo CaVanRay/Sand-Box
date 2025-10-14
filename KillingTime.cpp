@@ -1,20 +1,21 @@
+#include<string>
 #include<iostream>
 
 class car{
 private:
 
-string ownerName;
+std::string ownerName;
 int mileage;
 int MPG;
 
 public:
 
-GetOwner();
-GetMileage();
-GetMPG();
-SetOwner();
-SetMileage();
-SetMPG();
+std::string GetOwner();
+int GetMileage();
+int GetMPG();
+void SetOwner();
+void SetMileage();
+void SetMPG();
 
 };
 
