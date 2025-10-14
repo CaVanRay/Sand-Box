@@ -18,7 +18,7 @@ int main() {
     cout << endl << "ok, lets have some fun" << endl << endl;
     for(double i = 1; i <= number1; i = i + .25){
         for(double j = 1; j <= number1; j = j + .25){
-            cout << left << setw(15) << i*j << setw(15);
+            cout << left << setw(10) << i*j << setw(10);
         }
         cout << endl << endl;
     }
