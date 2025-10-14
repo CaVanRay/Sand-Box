@@ -1,5 +1,14 @@
 #include<iostream>
 
+class car{
+private:
+
+
+public:
+
+
+}
+
 int main() {
 
 
