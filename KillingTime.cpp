@@ -4,8 +4,8 @@
 class car{
 private:
 
-std::string ownerName;
-int mileage;
+std::string OwnerName;
+int Mileage;
 int MPG;
 
 public:
@@ -13,9 +13,15 @@ public:
 std::string GetOwner();
 int GetMileage();
 int GetMPG();
-void SetOwner();
-void SetMileage();
-void SetMPG();
+void SetOwner(const std::string newOwner){
+ OwnerName = newOwner;
+};
+void SetMileage(int newMileage){
+ Mileage = newMileage;
+};
+void SetMPG(int newMPG){
+ MPG = newMPG;
+};
 
 };
 
