@@ -67,16 +67,16 @@ int main() {
     car* C = &Sunfire;
     
     std::cout << A->GetOwner() << std::endl;
-    std::cout << A->GetMileage() << std::endl;
-    std::cout << A->GetMPG() << std::endl << std::endl;
+    std::cout << A->GetMileage() << " Miles" << std::endl;
+    std::cout << A->GetMPG() << " MPG" << std::endl << std::endl;
     
     std::cout << B->GetOwner() << std::endl;
-    std::cout << B->GetMileage() << std::endl;
-    std::cout << B->GetMPG() << std::endl << std::endl;
+    std::cout << B->GetMileage() << " Miles" << std::endl;
+    std::cout << B->GetMPG() << " MPG" << std::endl << std::endl;
  
     std::cout << C->GetOwner() << std::endl;
-    std::cout << C->GetMileage() << std::endl;
-    std::cout << C->GetMPG() << std::endl << std::endl;
+    std::cout << C->GetMileage() << " Miles" << std::endl;
+    std::cout << C->GetMPG() << " MPG" << std::endl << std::endl;
 
  return 0;
 }
