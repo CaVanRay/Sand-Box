@@ -8,6 +8,7 @@ private:
     std::string OwnerName;
     int Mileage;
     int MPG;
+    car* NextCar;
 
 public:
 
