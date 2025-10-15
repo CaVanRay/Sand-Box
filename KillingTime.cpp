@@ -28,13 +28,19 @@ void SetMPG(int newMPG){
 int main() {
  
  car Mustang;
- Mustang.SetOwner(string Cavan);
+ Mustang.SetOwner("Cavan");
  Mustang.SetMileage(175000);
  Mustang.SetMPG(20);
  
  car Impala;
+ Impala.SetOwner("Walker");
+ Impala.SetMileage(98000);
+ Impala.SetMPG(25);
  
  car Sunfire;
+ Sunfire.SetOwner("Rammtein");
+ Sunfire.SetMileage(190000);
+ Sunfire.SetMPG(28);
  
 
  return 0;
