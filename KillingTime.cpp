@@ -10,9 +10,17 @@ private:
 
 public:
 
-    std::string GetOwner();
-    int GetMileage();
-    int GetMPG();
+    std::string GetOwner(){
+        return OwnerName;
+    };
+    
+    int GetMileage(){
+        return Mileage;
+    };
+    
+    int GetMPG(){
+        return MPG;
+    };
     
     void SetOwner(const std::string newOwner){
         OwnerName = newOwner;
@@ -52,8 +60,18 @@ int main() {
     car* A = &Mustang;
     car* B = &Impala;
     car* C = &Sunfire;
+    
+    std::cout << A->GetOwner() << std::endl;
+    std::cout << A->GetMileage() << std::endl;
+    std::cout << A->GetMPG() << std::endl << std::endl;
+    
+    std::cout << B->GetOwner() << std::endl;
+    std::cout << B->GetMileage() << std::endl;
+    std::cout << B->GetMPG() << std::endl << std::endl;
  
+    std::cout << C->GetOwner() << std::endl;
+    std::cout << C->GetMileage() << std::endl;
+    std::cout << C->GetMPG() << std::endl << std::endl;
 
  return 0;
 }
-
