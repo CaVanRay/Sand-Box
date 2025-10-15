@@ -4,26 +4,31 @@
 class car{
 private:
 
-std::string OwnerName;
-int Mileage;
-int MPG;
+    std::string OwnerName;
+    int Mileage;
+    int MPG;
 
 public:
 
-std::string GetOwner();
-int GetMileage();
-int GetMPG();
-void SetOwner(const std::string newOwner){
- OwnerName = newOwner;
-};
-void SetMileage(int newMileage){
- Mileage = newMileage;
-};
-void SetMPG(int newMPG){
- MPG = newMPG;
-};
+    std::string GetOwner();
+    int GetMileage();
+    int GetMPG();
+    
+    void SetOwner(const std::string newOwner){
+        OwnerName = newOwner;
+        };
+        
+    void SetMileage(int newMileage){
+        Mileage = newMileage;
+        };
+        
+    void SetMPG(int newMPG){
+        MPG = newMPG;
+        };
 
 };
+
+
 
 int main() {
  
@@ -41,7 +46,14 @@ int main() {
  Sunfire.SetOwner("Rammtein");
  Sunfire.SetMileage(190000);
  Sunfire.SetMPG(28);
+
+
+    
+    car* A = &Mustang;
+    car* B = &Impala;
+    car* C = &Sunfire;
  
 
  return 0;
 }
+
