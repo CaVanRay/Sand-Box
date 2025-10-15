@@ -66,15 +66,15 @@ int main() {
     car* B = &Impala;
     car* C = &Sunfire;
     
-    std::cout << A->GetOwner() << std::endl;
+    std::cout << "Owner: " << A->GetOwner() << std::endl;
     std::cout << A->GetMileage() << " Miles" << std::endl;
     std::cout << A->GetMPG() << " MPG" << std::endl << std::endl;
     
-    std::cout << B->GetOwner() << std::endl;
+    std::cout << "Owner: " << B->GetOwner() << std::endl;
     std::cout << B->GetMileage() << " Miles" << std::endl;
     std::cout << B->GetMPG() << " MPG" << std::endl << std::endl;
  
-    std::cout << C->GetOwner() << std::endl;
+    std::cout << "Owner: " << C->GetOwner() << std::endl;
     std::cout << C->GetMileage() << " Miles" << std::endl;
     std::cout << C->GetMPG() << " MPG" << std::endl << std::endl;
 
