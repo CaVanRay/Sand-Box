@@ -23,6 +23,8 @@ public:
     int GetMPG(){
         return MPG;
     };
+
+    car* Get
     
     void SetOwner(const std::string newOwner){
         OwnerName = newOwner;
