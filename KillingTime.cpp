@@ -38,7 +38,7 @@ public:
     void SetMPG(int newMPG){
         MPG = newMPG;
         };
-// I need to make pointers for "prev" & "next" and the ability to create/delete items
+// I need to make pointers for "prevCar" & "nextCar" and the ability to create/delete items
 // A linked list of "car"s along with a function to run through the list outputting 
 // all of the info in each instance
 
