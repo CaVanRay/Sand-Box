@@ -25,7 +25,9 @@ public:
         return MPG;
     };
 
-    car* Get
+    car* GetNext(){
+       return NextCar;  
+    };
     
     void SetOwner(const std::string newOwner){
         OwnerName = newOwner;
@@ -90,7 +92,7 @@ int main() {
     std::cout << C->GetMileage() << " Miles" << std::endl;
     std::cout << C->GetMPG() << " MPG" << std::endl << std::endl;
 
-    M
+    
 
  return 0;
 }
