@@ -62,37 +62,45 @@ public:
 
 void printCatalogue(){
     
+    car* A;
+    
+        for(int i; i < 3; i++){
+    
+            std::cout << "Owner: " << A->GetOwner() << std::endl;
+            std::cout << A->GetMileage() << " Miles" << std::endl;
+            std::cout << A->GetMPG() << " MPG" << std::endl << std::endl;
+        
+        }
+        
 };
 
 int main() {
 
-std::cout << "Let's make some classes!" << std::endl;
+    std::cout << "Let's make some classes!" << std::endl;
     
- car Mustang;
- Mustang.SetOwner("Cavan");
- Mustang.SetMileage(175000);
- Mustang.SetMPG(20);
+    car Mustang;
+    Mustang.SetOwner("Cavan");
+    Mustang.SetMileage(175000);
+    Mustang.SetMPG(20);
  
- car Impala;
- Impala.SetOwner("Walker");
- Impala.SetMileage(98000);
- Impala.SetMPG(25);
+    car Impala;
+    Impala.SetOwner("Walker");
+    Impala.SetMileage(98000);
+    Impala.SetMPG(25);
  
- car Sunfire;
- Sunfire.SetOwner("Rammtein");
- Sunfire.SetMileage(190000);
- Sunfire.SetMPG(28);
+    car Sunfire;
+    Sunfire.SetOwner("Rammtein");
+    Sunfire.SetMileage(190000);
+    Sunfire.SetMPG(28);
 
- Mustang.SetPrev(nullptr);
- Mustang.SetNext(&Impala);
+    Mustang.SetPrev(nullptr);
+    Mustang.SetNext(&Impala);
  
- Impala.SetPrev(&Mustang);
- Impala.SetNext(&Sunfire);
- 
- Sunfire.SetPrev(&Impala);
- Sunfire.SetNext(nullptr);
-
-
+    Impala.SetPrev(&Mustang);
+    Impala.SetNext(&Sunfire);
+     
+    Sunfire.SetPrev(&Impala);
+    Sunfire.SetNext(nullptr);
     
     car* A = &Mustang;
     car* B = &Impala;
