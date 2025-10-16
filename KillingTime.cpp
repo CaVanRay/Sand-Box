@@ -60,20 +60,6 @@ public:
 };
 //********************************************************************
 
-void printCatalogue(){
-    
-    car* A;
-    
-        for(int i; i < 3; i++){
-    
-            std::cout << "Owner: " << A->GetOwner() << std::endl;
-            std::cout << A->GetMileage() << " Miles" << std::endl;
-            std::cout << A->GetMPG() << " MPG" << std::endl << std::endl;
-        
-        }
-        
-};
-
 int main() {
 
     std::cout << "Let's make some classes!" << std::endl;
