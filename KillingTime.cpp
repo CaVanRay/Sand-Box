@@ -104,7 +104,22 @@ int main() {
     std::cout << C->GetMileage() << " Miles" << std::endl;
     std::cout << C->GetMPG() << " MPG" << std::endl << std::endl;
 
+    void printCatalogue(){
     
+    car *ListOfCars[3];
+        ListOfCars[0] = Mustang;
+        ListOfCars[1] = Impala;
+        ListOfCars[2] = Sunfire;
+    
+        for(int i; i < 3; i++){
+            A = ListOfCars[i];
+            std::cout << "Owner: " << A->GetOwner() << std::endl;
+            std::cout << A->GetMileage() << " Miles" << std::endl;
+            std::cout << A->GetMPG() << " MPG" << std::endl << std::endl;
+        
+            }
+        
+    };
 
  return 0;
 }
