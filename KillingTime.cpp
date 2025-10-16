@@ -9,6 +9,7 @@ private:
     int Mileage;
     int MPG;
     car* NextCar;
+    car* PrevCar;
 
 public:
 
