@@ -24,6 +24,10 @@ public:
     int GetMPG(){
         return MPG;
     };
+    
+    car* GetPrev(){
+        return PrevCar;  
+    };
 
     car* GetNext(){
        return NextCar;  
