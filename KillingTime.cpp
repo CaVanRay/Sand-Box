@@ -62,7 +62,9 @@ public:
 
 
 int main() {
- 
+
+std::cout << "Let's make some classes!" << std::endl;
+    
  car Mustang;
  Mustang.SetOwner("Cavan");
  Mustang.SetMileage(175000);
@@ -77,6 +79,9 @@ int main() {
  Sunfire.SetOwner("Rammtein");
  Sunfire.SetMileage(190000);
  Sunfire.SetMPG(28);
+
+ Mustang.SetPrev(nullptr);
+ Mustang.SetNext(Impala);
 
 
     
