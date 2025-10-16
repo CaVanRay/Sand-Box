@@ -81,7 +81,13 @@ std::cout << "Let's make some classes!" << std::endl;
  Sunfire.SetMPG(28);
 
  Mustang.SetPrev(nullptr);
- Mustang.SetNext(Impala);
+ Mustang.SetNext(&Impala);
+ 
+ Impala.SetPrev(&Mustang);
+ Impala.SetNext(&Sunfire);
+ 
+ Sunfire.SetPrev(&Impala);
+ Sunfire.SetNext(nullptr);
 
 
     
