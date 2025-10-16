@@ -117,7 +117,7 @@ int main() {
         
             }
    
-    
+    // I need to create a function that works its way through a linked list of objects, outputting info as it goes
     
  return 0;
 }
