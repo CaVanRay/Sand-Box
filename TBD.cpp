@@ -9,30 +9,29 @@ class car{
     int MPG;
     car* Prev;
     car* Next;
-
   public:
-  // First the Setters
-  void SetOwner(std::string newOwner){
-    Owner = newOwner;
-  };
-  void SetModel(std::string newModel){
-    Model = newModel;
-  };
-  void SetVin(std::string newVin){
-    Vin = newVin;
-  };
-  void SetMileage(int newMileage){
-    Mileage = newMileage;
-  };
-  void SetMPG(int newMPG){
-    int MPG = newMPG;
-  };
-  void SetPrev(car* newPrev){
-    Prev = newPrev;
-  };
-  void setNext(car* newNext){
-    Next = newNext;
-  };
+    // First the Setters
+    void SetOwner(std::string newOwner){
+      Owner = newOwner;
+    };
+    void SetModel(std::string newModel){
+      Model = newModel;
+    };
+    void SetVin(std::string newVin){
+      Vin = newVin;
+    };
+    void SetMileage(int newMileage){
+      Mileage = newMileage;
+    };
+    void SetMPG(int newMPG){
+      int MPG = newMPG;
+    };
+    void SetPrev(car* newPrev){
+      Prev = newPrev;
+    };
+    void setNext(car* newNext){
+      Next = newNext;
+    };
   // Next the Getters
   std::string GetOwner(){
     return Owner;
