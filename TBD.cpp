@@ -32,36 +32,29 @@ class car{
     void setNext(car* newNext){
       Next = newNext;
     };
-  // Next the Getters
-  std::string GetOwner(){
+    // Next the Getters
+    std::string GetOwner(){
     return Owner;
+    };
+    std::string GetModel(){
+      return Model;
+    };
+    std::string GetVin(){
+      return Vin;
+    };
+    int GetMileage(){
+      return Mileage;
+    };
+    int GetMPG(){
+      return MPG;
+    };
+    car* GetPrev(){
+      return Prev;
+    };
+    car* GetNext(){
+      return Next;
+    };
   };
-
-  std::string GetModel(){
-    return Model;
-  };
-
-  std::string GetVin(){
-    return Vin;
-  };
-
-  int GetMileage(){
-    return Mileage;
-  };
-
-  int GetMPG(){
-    return MPG;
-  };
-
-  car* GetPrev(){
-    return Prev;
-  };
-
-  car* GetNext(){
-    return Next;
-  };
-
-};
 
 int main(){
   char conti;
