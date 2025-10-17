@@ -29,7 +29,7 @@ class car{
     int MPG = newMPG;
   };
   void SetPrev(car* newPrev){
-    Prev = &newPrev;
+    Prev = newPrev;
   };
   void setNext(){};
 
