@@ -57,7 +57,7 @@ class car{
     };
   };
 //***********************************************************************
-void printCataloge(car* n) {
+void printCatalogue(car* n) {
     while (n != nullptr) {
         std::cout << std::endl << "***************************************" << std::endl;
         std::cout << "Owner: " << n->GetOwner() << std::endl;
@@ -78,6 +78,9 @@ int main(){
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
       std::cin >> conti;
   }while(toupper(conti)== 'Y');
+
+  std::cout << std::endl << "Now please feel free to peruse the catalogue: " << std::endl;
+  printCatalogue(nullptr);
   
   return 0;
 }
