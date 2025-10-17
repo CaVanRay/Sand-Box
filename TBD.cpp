@@ -22,15 +22,25 @@ class car{
   void SetMPG(){};
 
   // Next the Getters
-  std::string GetOwner(){};
+  std::string GetOwner(){
+    return Owner;
+  };
 
-  std::string GetModel(){};
+  std::string GetModel(){
+    return Model;
+  };
 
-  std::string GetVin(){};
+  std::string GetVin(){
+    return Vin;
+  };
 
-  int GetMileage(){};
+  int GetMileage(){
+    return Mileage;
+  };
 
-  int GetMPG(){};
+  int GetMPG(){
+    return MPG;
+  };
 
 };
 
