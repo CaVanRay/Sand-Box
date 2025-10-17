@@ -31,8 +31,9 @@ class car{
   void SetPrev(car* newPrev){
     Prev = newPrev;
   };
-  void setNext(){};
-
+  void setNext(car* newNext){
+    Next = newNext;
+  };
   // Next the Getters
   std::string GetOwner(){
     return Owner;
