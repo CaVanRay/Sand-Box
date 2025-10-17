@@ -1,12 +1,14 @@
 #include <iostream>
 
 class car{
+
   private:
-  string Owner;
-  string Model;
-  string Vin;
+  std::string Owner;
+  std::string Model;
+  std::string Vin;
   int Mileage;
   int MPG;
+
   public:
   
   
