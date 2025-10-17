@@ -28,8 +28,9 @@ class car{
   void SetMPG(int newMPG){
     int MPG = newMPG;
   };
-  void SetPrev(){};
-  
+  void SetPrev(car* newPrev){
+    Prev = &newPrev;
+  };
   void setNext(){};
 
   // Next the Getters
