@@ -25,8 +25,9 @@ class car{
   void SetMileage(int newMileage){
     Mileage = newMileage;
   };
-  void SetMPG(){};
-  
+  void SetMPG(int newMPG){
+    int MPG = newMPG;
+  };
   void SetPrev(){};
   
   void setNext(){};
