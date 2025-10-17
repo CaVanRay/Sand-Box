@@ -64,8 +64,7 @@ void printCataloge(car* n) {
         std::cout << "Model: " << n->GetModel() << std::endl;
         std::cout << "VIN# : " << n->GetVin() << std::endl;
         std::cout << "Miles: " << n->GetMileage() << std::endl;
-        std::cout << "MPG  : " << n->GetMPG
-        cout << n->getData() << " ";
+        std::cout << "MPG  : " << n->GetMPG() << std::endl;
         n = n->GetNext();
     }
     cout << endl;
