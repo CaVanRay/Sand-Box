@@ -73,10 +73,10 @@ void printCataloge(car* n) {
 int main(){
   char conti;
   do{
-
-
-    std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
-    std::cin >> conti;
+      std::cout << std::endl << "Please Add a vehical to the catalogue" << std::endl;
+      
+      std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
+      std::cin >> conti;
   }while(toupper(conti)== 'Y');
   
   return 0;
