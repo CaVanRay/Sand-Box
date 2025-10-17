@@ -22,8 +22,9 @@ class car{
   void SetVin(std::string newVin){
     Vin = newVin;
   };
-  void SetMileage(){};
-
+  void SetMileage(int newMileage){
+    Mileage = newMileage;
+  };
   void SetMPG(){};
   
   void SetPrev(){};
