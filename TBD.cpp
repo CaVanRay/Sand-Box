@@ -22,6 +22,10 @@ class car{
   void SetMileage(){};
 
   void SetMPG(){};
+  
+  void SetPrev(){};
+  
+  void setNext(){};
 
   // Next the Getters
   std::string GetOwner(){
