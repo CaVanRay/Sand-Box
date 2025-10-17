@@ -51,7 +51,7 @@ int main(){
 
     std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
     std::cin >> conti;
-  }while(toupper(conti)== "Y");
+  }while(toupper(conti)== 'Y');
   
   return 0;
 }
