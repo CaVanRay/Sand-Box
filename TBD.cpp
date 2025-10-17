@@ -1,15 +1,14 @@
 #include <iostream>
 
 class car{
-
   private:
-  std::string Owner;
-  std::string Model;
-  std::string Vin;
-  int Mileage;
-  int MPG;
-  car* Prev;
-  car* Next;
+    std::string Owner;
+    std::string Model;
+    std::string Vin;
+    int Mileage;
+    int MPG;
+    car* Prev;
+    car* Next;
 
   public:
   // First the Setters
