@@ -16,7 +16,9 @@ class car{
   void SetOwner(std::string newOwner){
     Owner = newOwner;
   };
-  void SetModel(){};
+  void SetModel(std::string newModel){
+    Model = newModel;
+  };
 
   void SetVin(){};
 
