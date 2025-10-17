@@ -45,13 +45,13 @@ class car{
 };
 
 int main(){
-  char cont = "Y";
+  char conti;
   do{
 
 
-    std::cout << std::endl << std::endl << "Continue? (Y/N) :" 
-    std::cin >> cont;
-  }while(toupper(cont)=='Y';
+    std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
+    std::cin >> conti;
+  }while(toupper(conti)== "Y");
   
   return 0;
 }
