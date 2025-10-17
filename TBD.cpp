@@ -8,7 +8,7 @@ class car{
   std::string Vin;
   int Mileage;
   int MPG;
-  car* prev;
+  car* Prev;
   car* Next;
 
   public:
@@ -46,6 +46,14 @@ class car{
 
   int GetMPG(){
     return MPG;
+  };
+
+  car* GetPrev(){
+    return Prev;
+  };
+
+  car* GetNext(){
+    return Next;
   };
 
 };
