@@ -19,9 +19,9 @@ class car{
   void SetModel(std::string newModel){
     Model = newModel;
   };
-
-  void SetVin(){};
-
+  void SetVin(std::string newVin){
+    Vin = newVin;
+  };
   void SetMileage(){};
 
   void SetMPG(){};
