@@ -13,8 +13,9 @@ class car{
 
   public:
   // First the Setters
-  void SetOwner(std::string newOwner){};
+  void SetOwner(std::string newOwner){
     Owner = newOwner;
+  };
   void SetModel(){};
 
   void SetVin(){};
