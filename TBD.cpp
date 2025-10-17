@@ -8,6 +8,8 @@ class car{
   std::string Vin;
   int Mileage;
   int MPG;
+  car* prev;
+  car* Next;
 
   public:
   // First the Setters
