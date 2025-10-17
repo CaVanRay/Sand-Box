@@ -20,7 +20,18 @@ class car{
   void SetMileage(){};
 
   void SetMPG(){};
-  
+
+  // Next the Getters
+  std::string GetOwner(){};
+
+  std::string GetModel(){};
+
+  std::string GetVin(){};
+
+  int GetMileage(){};
+
+  int GetMPG(){};
+
 };
 
 int main(){
