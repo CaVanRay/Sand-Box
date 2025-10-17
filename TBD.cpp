@@ -10,7 +10,16 @@ class car{
   int MPG;
 
   public:
-  
+  // First the Setters
+  void SetOwner(){};
+
+  void SetModel(){};
+
+  void SetVin(){};
+
+  void SetMileage(){};
+
+  void SetMPG(){};
   
 };
 
