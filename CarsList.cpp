@@ -82,7 +82,7 @@ int main(){
       std::cout << std::endl << "Please Add a vehical to the catalogue" << std::endl;
       // If first object pointer needs to be labeled "head"
       std::cout << "input car owner: ";
-      std::cin >> Owner;
+      std::getline(std::cin, Owner);
       std::cout << std::endl << "input car model: ";
       std::cin >> Model;
       std::cout << std::endl << "input car vin#: ";
