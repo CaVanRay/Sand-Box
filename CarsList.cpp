@@ -72,13 +72,15 @@ void printCatalogue(car* n) {
 //***********************************************************************
 int main(){
   char conti;
+  car* head = nullptr;
   do{
+    
       std::string Owner;
       std::string Model;
       std::string Vin;
       int Mileage;
       int MPG;
-      car* head = nullptr;
+    
       std::cout << std::endl << "Please Add a vehical to the catalogue" << std::endl;
       // If first object pointer needs to be labeled "head"
       std::cout << "input car owner: ";
