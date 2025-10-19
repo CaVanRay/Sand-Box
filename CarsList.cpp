@@ -84,6 +84,8 @@ int main(){
       std::cin >> Owner;
       std::cout << std::endl << "input car model: ";
       std::cin >> Model;
+      std::cout << std::endl << "input car vin#: ";
+      std::cin >> Vin;
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
       std::cin >> conti;
