@@ -80,7 +80,7 @@ int main(){
       std::string Vin;
       int Mileage;
       int MPG;
-    
+    //***********************************************************************
       std::cout << std::endl << "Please Add a vehical to the catalogue" << std::endl;
       // If first object pointer needs to be labeled "head"
       std::cout << "input car owner: ";
@@ -97,9 +97,11 @@ int main(){
       
       std::cout << std::endl << "input car MPG: ";
       std::cin >> MPG;
-      
+      //***********************************************************************
+    
       // Check for a head, it there isn't one create one, if there is one check array of pointers for size and then append new car to the end
       if( head = nullptr){
+
         
       }
     
