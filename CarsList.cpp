@@ -59,7 +59,7 @@ class car{
 //***********************************************************************
 void printCatalogue(car* n) {
     while (n != nullptr) {
-        std::cout << std::endl << "***************************************" std::endl;
+        std::cout << std::endl << "***************************************" << std::endl;
         std::cout << "Owner: " << n->GetOwner() << std::endl;
         std::cout << "Model: " << n->GetModel() << std::endl;
         std::cout << "VIN# : " << n->GetVin() << std::endl;
@@ -81,7 +81,7 @@ int main(){
       std::cout << std::endl << "Please Add a vehical to the catalogue" << std::endl;
       // If first object pointer needs to be labeled "head"
       std::cout << "input car owner: ";
-      std::cin >>
+      std::cin >> Owner;
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
       std::cin >> conti;
