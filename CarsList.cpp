@@ -75,6 +75,8 @@ int main(){
   do{
       std::cout << std::endl << "Please Add a vehical to the catalogue" << std::endl;
       // If first object pointer needs to be labeled "head"
+      std::cout << "input car owner: ";
+      std::cin >>
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
       std::cin >> conti;
