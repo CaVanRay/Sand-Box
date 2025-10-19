@@ -88,7 +88,7 @@ int main(){
       std::cout << std::endl << "input car vin#: ";
       std::getline(std::cin, Vin);
       std::cout << std::endl << "input car mileage: ";
-      std::cin >> Mileage;
+      std::getline(std::cin, Mileage);
       std::cout << std::endl << "input car MPG: ";
       std::cin >> MPG;
       // Check for a head, it there isn't one create one, if there is one check array of pointers for size and then append new car to the end
