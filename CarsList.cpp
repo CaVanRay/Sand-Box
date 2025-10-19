@@ -88,6 +88,8 @@ int main(){
       std::cin >> Vin;
       std::cout << std::endl << "input car mileage: ";
       std::cin >> Mileage;
+      std::cout << std::endl << "input car MPG: ";
+      std::cin >> MPG;
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
       std::cin >> conti;
