@@ -86,7 +86,7 @@ int main(){
       std::cout << std::endl << "input car model: ";
       std::getline(std::cin, Model);
       std::cout << std::endl << "input car vin#: ";
-      (std::cin, Vin);
+      std::getline(std::cin, Vin);
       std::cout << std::endl << "input car mileage: ";
       std::cin >> Mileage;
       std::cout << std::endl << "input car MPG: ";
