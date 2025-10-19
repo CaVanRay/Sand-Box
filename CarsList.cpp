@@ -82,6 +82,8 @@ int main(){
       // If first object pointer needs to be labeled "head"
       std::cout << "input car owner: ";
       std::cin >> Owner;
+      std::cout << std::endl << "input car model: ";
+      std::cin >> Model;
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
       std::cin >> conti;
