@@ -59,7 +59,7 @@ class car{
 //***********************************************************************
 void printCatalogue(car* n) {
     while (n != nullptr) {
-        std::cout << std::endl << "***************************************" << std::endl;
+        std::cout << std::endl << "***************************************" std::endl;
         std::cout << "Owner: " << n->GetOwner() << std::endl;
         std::cout << "Model: " << n->GetModel() << std::endl;
         std::cout << "VIN# : " << n->GetVin() << std::endl;
