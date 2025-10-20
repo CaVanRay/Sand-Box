@@ -105,6 +105,14 @@ int main(){
       // Check for a head, it there isn't one create one, if there is one check array of pointers for size and then append new car to the end
 
       numberOfCars = carCatalogue.size();
+      int n = numberOfCars+1;
+      
+      car n;
+      n->SetOwner(Owner);
+      n->SetModel(Model);
+      n->SetVin(Vin);
+      n->SetMileage(Mileage);
+      n->SetMPG(MPG);
       
       if( head = nullptr){
 
