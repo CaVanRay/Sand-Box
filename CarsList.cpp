@@ -10,6 +10,8 @@ class car{
     std::string Vin;
     int Mileage;
     int MPG;
+    int Price;
+    Bool ForSale;
     car* Prev;
     car* Next;
   public:
