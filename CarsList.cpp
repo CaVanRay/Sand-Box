@@ -111,15 +111,10 @@ int main(){
     
       // Check for a head, it there isn't one create one, if there is one check array of pointers for size and then append new car to the end
 
-      numberOfCars = carCatalogue.size();
-      int n;
-      if(numberOfCars == 0){
-        n = 0;
-      }else{
-        n = numberOfCars+1;
-      }
+      car* newCar = new car();
+      newCar->SetOwner(Owner);
       
-      car carCatalogue[n];
+      /*
       carCatalogue[n].SetOwner(Owner);
       carCatalogue[n].SetModel(Model);
       carCatalogue[n].SetVin(Vin);
@@ -132,6 +127,7 @@ int main(){
         carCatalogue[n].SetPrev(&carCatalogue[n-1]);
         carCatalogue[n-1].SetNext(&carCatalogue[n]);
       }
+      */
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
       std::cin >> conti;
