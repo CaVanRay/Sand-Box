@@ -115,8 +115,9 @@ int main(){
       carCatalogue[n].SetMPG(MPG);
       
       if( head = nullptr){
-
-        
+        head = &carCatalogue[n]
+      }else{
+        carCatalogue[n].SetPrev(&carCatalogue[n-1]);
       }
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
