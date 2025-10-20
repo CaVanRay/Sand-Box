@@ -59,6 +59,12 @@ class car{
     int GetMPG(){
       return MPG;
     };
+    int GetPrice(){
+      return Price;
+    };
+    bool GetSale(){
+      return ForSale;
+    };
     car* GetPrev(){
       return Prev;
     };
