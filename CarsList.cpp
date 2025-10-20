@@ -114,7 +114,8 @@ int main(){
       car* newCar = new car();
       newCar->SetOwner(Owner);
       newCar->SetModel(Model);
-    
+      newCar->SetVin(Vin);
+      
       /*
       carCatalogue[n].SetOwner(Owner);
       carCatalogue[n].SetModel(Model);
