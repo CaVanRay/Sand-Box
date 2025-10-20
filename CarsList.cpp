@@ -60,13 +60,16 @@ class car{
   };
 //***********************************************************************
 void printCatalogue(car* n) {
+    int index = 1;
     while (n != nullptr) {
         std::cout << std::endl << "***************************************" << std::endl;
+        std::cout << "Index#: " << index << std::endl;
         std::cout << "Owner: " << n->GetOwner() << std::endl;
         std::cout << "Model: " << n->GetModel() << std::endl;
         std::cout << "VIN# : " << n->GetVin() << std::endl;
         std::cout << "Miles: " << n->GetMileage() << std::endl;
         std::cout << "MPG  : " << n->GetMPG() << std::endl;
+        index++;
         n = n->GetNext();
     }
     std::cout << std::endl;
