@@ -104,6 +104,7 @@ int main(){
 
         
       }
+      std::vector<MyClass*> myClassPointers;
     
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
