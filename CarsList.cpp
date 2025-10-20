@@ -26,7 +26,7 @@ class car{
       Mileage = newMileage;
     };
     void SetMPG(int newMPG){
-      int MPG = newMPG;
+      MPG = newMPG;
     };
     void SetPrev(car* newPrev){
       Prev = newPrev;
@@ -119,7 +119,7 @@ int main(){
       carCatalogue[n].SetMileage(Mileage);
       carCatalogue[n].SetMPG(MPG);
       
-      if( head = nullptr){
+      if( head == nullptr){
         head = &carCatalogue[n];
       }else{
         carCatalogue[n].SetPrev(&carCatalogue[n-1]);
