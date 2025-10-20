@@ -74,6 +74,8 @@ void printCatalogue(car* n) {
 int main(){
   char conti;
   car* head = nullptr;
+  std::vector<car*> carCatalogue;
+  size_t numberOfCars;
   do{
     
       std::string Owner;
@@ -105,7 +107,7 @@ int main(){
 
         
       }
-      std::vector<car*> carCatlogue;
+      numberOfCars = carCatalogue;
     
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
