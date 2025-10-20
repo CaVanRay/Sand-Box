@@ -83,6 +83,13 @@ void printCatalogue(car* n) {
         std::cout << "VIN# : " << n->GetVin() << std::endl;
         std::cout << "Miles: " << n->GetMileage() << std::endl;
         std::cout << "MPG  : " << n->GetMPG() << std::endl;
+        std::cout << "Price: " << n->GetPrice() << std::endl;
+        std::cout << "Status: ";
+        if(GetSale()){
+          std::cout << "Still available" << std::endl;
+        }else{
+          std::cout << "Not available" << std::endl;
+        }
         index++;
         n = n->GetNext();
     }
