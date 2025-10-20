@@ -31,7 +31,7 @@ class car{
     void SetPrev(car* newPrev){
       Prev = newPrev;
     };
-    void setNext(car* newNext){
+    void SetNext(car* newNext){
       Next = newNext;
     };
     // Next the Getters
