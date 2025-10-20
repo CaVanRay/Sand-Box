@@ -113,7 +113,8 @@ int main(){
 
       car* newCar = new car();
       newCar->SetOwner(Owner);
-      
+      newCar->SetModel(Model);
+    
       /*
       carCatalogue[n].SetOwner(Owner);
       carCatalogue[n].SetModel(Model);
