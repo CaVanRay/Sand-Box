@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 //***********************************************************************
 class car{
@@ -104,7 +105,7 @@ int main(){
 
         
       }
-      std::vector<MyClass*> myClassPointers;
+      std::vector<car*> carCatlogue;
     
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
