@@ -135,6 +135,7 @@ int main(){
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
       std::cin >> conti;
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
   }while(toupper(conti)== 'Y');
 
   std::cout << std::endl << "Now please feel free to peruse the catalogue: " << std::endl;
