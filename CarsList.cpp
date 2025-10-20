@@ -105,7 +105,12 @@ int main(){
       // Check for a head, it there isn't one create one, if there is one check array of pointers for size and then append new car to the end
 
       numberOfCars = carCatalogue.size();
-      int n = numberOfCars+1;
+      int n;
+      if(numberOfCars == 0){
+        n = 0;
+      }else{
+        n = numberOfCars+1;
+      }
       
       car carCatalogue[n];
       carCatalogue[n].SetOwner(Owner);
