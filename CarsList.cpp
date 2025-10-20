@@ -31,6 +31,12 @@ class car{
     void SetMPG(int newMPG){
       MPG = newMPG;
     };
+    void SetPrice(int newPrice){
+      Price = newPrice;
+    };
+    void SetSale(bool newSale){
+      ForSale = newSale;
+    };
     void SetPrev(car* newPrev){
       Prev = newPrev;
     };
