@@ -1,6 +1,9 @@
 #include <iostream>
+#include <algorithm>
+#include <string>
 #include <vector>
 #include <limits>
+#include <cctype>
 
 //***********************************************************************
 class car{
@@ -11,7 +14,7 @@ class car{
     int Mileage;
     int MPG;
     int Price;
-    Bool ForSale;
+    bool ForSale;
     car* Prev;
     car* Next;
   public:
@@ -83,9 +86,9 @@ void printCatalogue(car* n) {
         std::cout << "VIN# : " << n->GetVin() << std::endl;
         std::cout << "Miles: " << n->GetMileage() << std::endl;
         std::cout << "MPG  : " << n->GetMPG() << std::endl;
-        std::cout << "Price: " << n->GetPrice() << std::endl;
+        std::cout << "Price: $" << n->GetPrice() << std::endl;
         std::cout << "Status: ";
-        if(GetSale()){
+        if(n->GetSale()){
           std::cout << "Still available" << std::endl;
         }else{
           std::cout << "Not available" << std::endl;
@@ -142,10 +145,12 @@ int main(){
 
       std::cout << std::endl << "is car available for purchase? (Yes/No): ";
       std::getline(std::cin, Available);
-      if(toupper(Available) == "YES"){
-        ForSale = true
+      std::transform(Available.begin(), Available.end(), Available.begin(),
+                   [](unsigned char c){ return std::toupper(c); });
+      if(Available == "YES"){
+        ForSale = true;
           }else{
-        ForSale = false
+        ForSale = false;
           }
       //***********************************************************************
     
@@ -157,6 +162,8 @@ int main(){
       newCar->SetVin(Vin);
       newCar->SetMileage(Mileage);
       newCar->SetMPG(MPG);
+      newCar->SetPrice(Price);
+      newCar->SetSale(ForSale);
       
       
       if (!carCatalogue.empty()) {
