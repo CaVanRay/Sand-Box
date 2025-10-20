@@ -108,6 +108,9 @@ int main(){
       std::string Vin;
       int Mileage;
       int MPG;
+      int Price;
+      std::string Available;
+      bool ForSale;
     //***********************************************************************
       std::cout << std::endl << "Please Add a vehical to the catalogue" << std::endl << std::endl;
       
@@ -131,6 +134,19 @@ int main(){
       std::cout << std::endl << "input car MPG: ";
       std::cin >> MPG;
       std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+
+      std::cout << std::endl << "input car price: ";
+      std::cin >> Price;
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+      std::cout << std::endl << "is car available for purchase? (Yes/No): ";
+      std::getline(std::cin, Available);
+      if(toupper(Available) == "YES"){
+        ForSale = true
+          }else{
+        ForSale = false
+          }
       //***********************************************************************
     
       // Check for a head, it there isn't one create one, if there is one check array of pointers for size and then append new car to the end
