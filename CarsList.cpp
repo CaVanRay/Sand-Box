@@ -89,17 +89,14 @@ int main(){
       
       std::cout << "input car owner: ";
       std::getline(std::cin, Owner);
-      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       
       
       std::cout << std::endl << "input car model: ";
       std::getline(std::cin, Model);
-      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       
       
       std::cout << std::endl << "input car vin#: ";
       std::getline(std::cin, Vin);
-      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       
       
       std::cout << std::endl << "input car mileage: ";
