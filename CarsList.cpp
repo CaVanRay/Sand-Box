@@ -107,12 +107,12 @@ int main(){
       numberOfCars = carCatalogue.size();
       int n = numberOfCars+1;
       
-      car n;
-      n->SetOwner(Owner);
-      n->SetModel(Model);
-      n->SetVin(Vin);
-      n->SetMileage(Mileage);
-      n->SetMPG(MPG);
+      car carCatalogue[n];
+      carCatalogue[n]->SetOwner(Owner);
+      carCatalogue[n]->SetModel(Model);
+      carCatalogue[n]->SetVin(Vin);
+      carCatalogue[n]->SetMileage(Mileage);
+      carCatalogue[n]->SetMPG(MPG);
       
       if( head = nullptr){
 
