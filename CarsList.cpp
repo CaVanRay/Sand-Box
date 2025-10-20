@@ -126,6 +126,8 @@ int main(){
         head = newCar;
     }
       
+      carCatalogue.push_back(newCar);
+      
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
       std::cin >> conti;
       std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
