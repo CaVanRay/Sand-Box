@@ -108,11 +108,11 @@ int main(){
       int n = numberOfCars+1;
       
       car carCatalogue[n];
-      carCatalogue[n]->SetOwner(Owner);
-      carCatalogue[n]->SetModel(Model);
-      carCatalogue[n]->SetVin(Vin);
-      carCatalogue[n]->SetMileage(Mileage);
-      carCatalogue[n]->SetMPG(MPG);
+      carCatalogue[n].SetOwner(Owner);
+      carCatalogue[n].SetModel(Model);
+      carCatalogue[n].SetVin(Vin);
+      carCatalogue[n].SetMileage(Mileage);
+      carCatalogue[n].SetMPG(MPG);
       
       if( head = nullptr){
 
