@@ -119,20 +119,12 @@ int main(){
       newCar->SetMPG(MPG);
       
       
-      /*
-      carCatalogue[n].SetOwner(Owner);
-      carCatalogue[n].SetModel(Model);
-      carCatalogue[n].SetVin(Vin);
-      carCatalogue[n].SetMileage(Mileage);
-      carCatalogue[n].SetMPG(MPG);
-      
-      if( head == nullptr){
-        head = &carCatalogue[n];
-      }else{
-        carCatalogue[n].SetPrev(&carCatalogue[n-1]);
-        carCatalogue[n-1].SetNext(&carCatalogue[n]);
-      }
-      */
+      if (!carCatalogue.empty()) {
+        newCar->SetPrev(carCatalogue.back());
+        carCatalogue.back()->SetNext(newCar);
+    } else {
+        head = newCar;
+    }
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
       std::cin >> conti;
