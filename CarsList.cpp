@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <limits>
 
 //***********************************************************************
 class car{
@@ -85,26 +86,30 @@ int main(){
       int MPG;
     //***********************************************************************
       std::cout << std::endl << "Please Add a vehical to the catalogue" << std::endl << std::endl;
-      std::cin.clear();
+      
       std::cout << "input car owner: ";
       std::getline(std::cin, Owner);
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       
-      std::cin.clear();
+      
       std::cout << std::endl << "input car model: ";
       std::getline(std::cin, Model);
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       
-      std::cin.clear();
+      
       std::cout << std::endl << "input car vin#: ";
       std::getline(std::cin, Vin);
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       
-      std::cin.clear();
+      
       std::cout << std::endl << "input car mileage: ";
       std::cin >> Mileage;
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       
-      std::cin.clear();
+      
       std::cout << std::endl << "input car MPG: ";
       std::cin >> MPG;
-      std::cin.clear();
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       //***********************************************************************
     
       // Check for a head, it there isn't one create one, if there is one check array of pointers for size and then append new car to the end
