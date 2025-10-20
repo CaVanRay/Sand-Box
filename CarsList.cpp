@@ -118,6 +118,7 @@ int main(){
         head = &carCatalogue[n];
       }else{
         carCatalogue[n].SetPrev(&carCatalogue[n-1]);
+        carCatalogue[n-1].SetNext(&carCatalogue[n]);
       }
       
       std::cout << std::endl << std::endl << "Continue? (Y/N) :" ;
@@ -125,7 +126,7 @@ int main(){
   }while(toupper(conti)== 'Y');
 
   std::cout << std::endl << "Now please feel free to peruse the catalogue: " << std::endl;
-  printCatalogue(nullptr);
+  printCatalogue(head);
   
   return 0;
 }
