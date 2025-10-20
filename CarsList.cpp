@@ -115,7 +115,7 @@ int main(){
       carCatalogue[n].SetMPG(MPG);
       
       if( head = nullptr){
-        head = &carCatalogue[n]
+        head = &carCatalogue[n];
       }else{
         carCatalogue[n].SetPrev(&carCatalogue[n-1]);
       }
