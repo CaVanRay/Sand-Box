@@ -166,7 +166,7 @@ int main(){
           }
       //***********************************************************************
     
-      // Check for a head, it there isn't one create one, if there is one check array of pointers for size and then append new car to the end
+      // Check for a head, if there isn't one create one, if there is one check array of pointers for size and then append new car to the end
 
       car* newCar = new car();
       newCar->SetOwner(Owner);
