@@ -6,6 +6,7 @@
 #include <cctype>
 
 //***********************************************************************
+
 class car{
   private:
     std::string Owner;
@@ -75,7 +76,9 @@ class car{
       return Next;
     };
   };
+
 //***********************************************************************
+
 void printCatalogue(car* n) {
     int index = 1;
     while (n != nullptr) {
@@ -98,6 +101,7 @@ void printCatalogue(car* n) {
     }
     std::cout << std::endl;
 }
+
 //***********************************************************************
 
 void printCar(){
@@ -131,6 +135,7 @@ void deleteCar(){
 }
 
 //***********************************************************************
+
 int main(){
   char conti;
   car* head = nullptr;
@@ -146,7 +151,9 @@ int main(){
       int Price;
       std::string Available;
       bool ForSale;
+    
     //***********************************************************************
+    
       std::cout << std::endl << "Please Add a vehical to the catalogue" << std::endl << std::endl;
       
       std::cout << "input car owner: ";
@@ -184,6 +191,7 @@ int main(){
           }else{
         ForSale = false;
           }
+    
       //***********************************************************************
     
       // Check for a head, if there isn't one create one, if there is one check array of pointers for size and then append new car to the end
